@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface PhoneMedia {
+public interface PhoneMedia {
+    void photo();
+    void video();
 }

@@ -1,2 +1,18 @@
-package PACKAGE_NAME;public class Phone {
+public class  Phone {
+    private String name;
+    private String model;
+    private String color;
+    private int ram;
+    private int storage;
+
+    public Phone(String name, String model, String color, int ram, int storage) {
+        this.name = name;
+        this.model = model;
+        this.color = color;
+        this.ram = ram;
+        this.storage = storage;
+
+    }
+
+
 }

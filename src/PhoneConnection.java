@@ -1,2 +1,4 @@
-package PACKAGE_NAME;public interface PhoneConnection {
+public interface PhoneConnection {
+    void call();
+    void sendMassage();
 }
