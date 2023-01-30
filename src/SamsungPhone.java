@@ -1,6 +1,9 @@
 public class SamsungPhone extends Phone implements PhoneConnection,PhoneMedia {
     private String numSamsung;
-
+    public SamsungPhone(String name, String model, String color, int ram, int storage,String numSamsung) {
+        super(name, model, color, ram, storage);
+        this.numSamsung=numSamsung;
+    }
     public String getNumSamsung() {
         return numSamsung;
     }
@@ -9,18 +12,6 @@ public class SamsungPhone extends Phone implements PhoneConnection,PhoneMedia {
         this.numSamsung = numSumsung;
     }
 
-    public SamsungPhone(String name, String model, String color, int ram, int storage,String numSamsung) {
-        super(name, model, color, ram, storage);
-        this.numSamsung=numSamsung;
-    }
-
-
-    @Override
-    public String toString() {
-        return super.toString()+ "SamsungPhone{" +
-                "numSamsung='" + numSamsung + '\'' +
-                '}';
-    }
 
     @Override
     public void call() {
@@ -42,4 +33,13 @@ public class SamsungPhone extends Phone implements PhoneConnection,PhoneMedia {
     public void video() {
         System.out.println( numSamsung+"Відео");
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+ "SamsungPhone{" +
+                "numSamsung='" + numSamsung + '\'' +
+                '}';
+    }
+
+
 }

@@ -1,6 +1,12 @@
 public class NokiaPhone extends Phone implements PhoneConnection{
     private String numNokia;
     private String processor;
+    public NokiaPhone(String name, String model, String color, int ram, int storage,String numNokia,String processor) {
+        super(name, model, color, ram, storage);
+        this.processor=processor;
+        this.numNokia=numNokia;
+
+    }
 
     public String getNumNokia() {
         return numNokia;
@@ -18,23 +24,6 @@ public class NokiaPhone extends Phone implements PhoneConnection{
         this.processor = procesor;
     }
 
-    public NokiaPhone(String name, String model, String color, int ram, int storage,String numNokia,String processor) {
-        super(name, model, color, ram, storage);
-        this.processor=processor;
-        this.numNokia=numNokia;
-
-    }
-
-
-    @Override
-    public String toString() {
-        return super.toString()+"NokiaPhone{" +
-                "numNokia='" + numNokia + '\'' +
-                ", processor='" + processor + '\'' +
-                '}';
-    }
-
-
 
     @Override
     public void call() {
@@ -48,4 +37,16 @@ public class NokiaPhone extends Phone implements PhoneConnection{
         System.out.println( numNokia+"Надсилаємо");
 
     }
+
+    @Override
+    public String toString() {
+        return super.toString()+"NokiaPhone{" +
+                "numNokia='" + numNokia + '\'' +
+                ", processor='" + processor + '\'' +
+                '}';
+    }
+
+
+
+
 }

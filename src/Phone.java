@@ -14,6 +14,44 @@ public class  Phone {
 
     }
 
+    public void setRam(int ram) {
+        this.ram = ram;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setStorage(int storage) {
+        this.storage = storage;
+    }
+
+    public void setModel(String model) {
+        this.model = model;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getStorage() {
+        return storage;
+    }
+
+    public int getRam() {
+        return ram;
+    }
+    public String getModel() {
+        return model;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public String getName() {
+        return name;
+    }
 
     @Override
     public String toString() {
