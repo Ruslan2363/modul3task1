@@ -15,4 +15,14 @@ public class  Phone {
     }
 
 
+    @Override
+    public String toString() {
+        return "Phone{" +
+                "name='" + name + '\'' +
+                ", model='" + model + '\'' +
+                ", color='" + color + '\'' +
+                ", ram=" + ram +
+                ", storage=" + storage +
+                '}';
+    }
 }
